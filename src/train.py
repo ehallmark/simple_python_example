@@ -6,8 +6,9 @@ import keras
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation
+import sys
 
-output_dir = '/mnt/xor_example/'
+output_dir = sys.argv[1]
 num_examples = 10000
 
 features_path = os.path.join(output_dir, 'features.txt')

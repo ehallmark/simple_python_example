@@ -5,8 +5,9 @@ from pathlib import Path
 from keras.models import load_model
 from keras.utils import to_categorical
 import numpy as np
+import sys
 
-output_dir = '/mnt/xor_example/'
+output_dir = sys.argv[1]
 
 features_path = os.path.join(output_dir, 'features.txt')
 labels_path = os.path.join(output_dir, 'labels.txt')
