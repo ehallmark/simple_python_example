@@ -32,7 +32,8 @@ loss = 'categorical_crossentropy'
 opt = keras.optimizers.Adam(lr=learning_rate, decay=decay)
 
 model = Sequential([
-    Dense(2, input_shape=(2,), activation='softmax'),
+    Dense(50, input_shape=(2,), activation='tanh'),
+    Dense(2, activation='softmax')
 ])
 
 # Let's train the model using RMSprop
